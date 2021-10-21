@@ -11,3 +11,6 @@ docker run -p 8080:8080 -p 50000:50000 -v jenkins:/var/jenkins_home -v /var/run/
 * Create your user and login with your user.
 * Update any plugin that needs update.
 * Stop and remove the container. Your jenkins is now ready to server the pipelines.
+
+Below are few integrations for Jenkins
+* [SonarQube](configurations/sonarqube.md)
