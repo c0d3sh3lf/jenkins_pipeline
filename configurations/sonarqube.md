@@ -9,6 +9,10 @@ docker run -d --name sonarqube -p 9000:9000 --net=dockernet -v sonarqube_data:/o
 * Configure SonarQube. Default administrator username and password for SonarQube would be `admin:admin`.
 * Update the password at first login
 
+## Adding Sonarqube plugin
+1. Login to Jenkins and go to "Manage Jenkins" and select "Plugin Manager"
+2. Look for "SonarQube Scanner for Jenkins" plugin and select it
+3. Select "Download and install after Restart"
 
 ## Adding code to Jenkinsfile
 Add below code in the Jenkinsfile
