@@ -24,7 +24,7 @@ With a bit more detail? Anchore Engine is a Docker container static analysis and
 2. Search for "Anchore Container Image Scanner" and select it
 3. Clcik on "Download and install after restart" and let the process compelete.
 4. Go to "Manage Jenkins" and "Configure System". Scroll down till you find "Anchore Container Image Scanner"
-5. Add the Anchore Url and the credentials and click on Save.
+5. Add the Anchore Url [http://anchore:8228/v1](http://anchore:8228/v1) and the credentials and click on Save.
 
 ## Using Anchore in Jenkinsfile
 You can add following code snippet in your Jenkinsfile for anchore processing
