@@ -2,7 +2,7 @@
 1. Login to Jenkins and select "New Item"
 2. Give an item name and select "Pipeline"
 3. Select "Github project" and provide project path
-4. Under "Build Triggers" select "GitHub hook trigger for GITScm polling". Ensure you have GitHub plugin installed to have this option visible.
+4. Under "Build Triggers" select "Poll SCM" and set the Schedule to `* * * * *` to poll the GitHub every minute. Ensure you have GitHub plugin installed to have this option visible.
 5. Under "Pipeline" select "Pipeline script from SCM" and select Git as your SCM
 6. Generate a Personal Access Token (PAT) on GitHub and copy it.
 7. Add the repository URL in the format `https://<PAT>@github.com/<REPO_URL>`
