@@ -6,6 +6,16 @@ With a bit more detail? Anchore Engine is a Docker container static analysis and
 ## Downloading Anchore
 1. To download Jenkins, please download the [Docker Compose](https://engine.anchore.io/docs/quickstart/docker-compose.yaml) file for Anchore and store it a directory
 2. Edit and Save the file as per your requirements.
+   ```
+   networks:
+    dockernet:
+        external: true
+   ```
+   and add the below code under each service.
+   ```
+   networks:
+    - dockernet
+   ```
 3. From the terminal, go to the directory and run `docker-compose up -d`
 4. Your anchore engine should be up and running.
 
