@@ -16,6 +16,7 @@ docker run -p 8080:8080 -p 50000:50000 -v jenkins:/var/jenkins_home -v /var/run/
 [1. Setting up Jenkins Pipeline](steps/01_setting_up_jenkins_pipeline.md)
 
 Below are few integrations for Jenkins
+* [Aliases](configurations/aliases.md)
 * [Anchore](configurations/anchore.md)
 * [Embeddable Build Status](configurations/github_build_status.md)
 * [SonarQube](configurations/sonarqube.md)
