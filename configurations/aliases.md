@@ -1,4 +1,3 @@
-```
-alias pipeup="docker run -d --name sonarqube -p 9000:9000 --net=dockernet -v sonarqube_data:/opt/sonarqube/data -v sonarqube_extensions:/opt/sonarqube/extensions -v sonarqube_logs:/opt/sonarqube/logs --stop-timeout 3600 sonarqube && docker run -d -p 8080:8080 -p 50000:50000 -v jenkins:/var/jenkins_home -v /var/run/docker.sock:/var/run/docker.sock --name jenkins --net=dockernet jenkinsci/blueocean && cd /Users/sam/Tools/scripts/practice/anchore && docker-compose up -d && docker exec -u root jenkins chmod 666 /var/run/docker.sock"
-alias pipedown="docker stop jenkins && docker stop sonarqube && docker rm jenkins && docker rm sonarqube && cd /Users/sam/Tools/scripts/practice/anchore && docker-compose down"
-```
+```alias pipeup="docker run -d --name sonarqube -p 9000:9000 --net=dockernet -v sonarqube_data:/opt/sonarqube/data -v sonarqube_extensions:/opt/sonarqube/extensions -v sonarqube_logs:/opt/sonarqube/logs --stop-timeout 3600 sonarqube && docker run -d -p 8080:8080 -p 50000:50000 -v jenkins:/var/jenkins_home -v /var/run/docker.sock:/var/run/docker.sock --name jenkins --net=dockernet jenkinsci/blueocean && cd /Users/sam/Tools/scripts/practice/anchore && docker-compose up -d && docker exec -u root jenkins chmod 666 /var/run/docker.sock"```
+
+```alias pipedown="docker stop jenkins && docker stop sonarqube && docker rm jenkins && docker rm sonarqube && cd /Users/sam/Tools/scripts/practice/anchore && docker-compose down"```
