@@ -9,3 +9,5 @@
 8. Ensure correct branch is specified in the "Branch" setting
 9. Ensure correct script path is defined in the "Script Path" setting
 10. Click on Save
+
+[Home](../README.md)
