@@ -29,5 +29,7 @@ Add the below snippet of code to the stage where you need to retrieve the creden
 ```
 
 [Using credentials in scripted Jenkins pipelines – Schneide Blog](https://schneide.blog/2021/06/02/using-credentials-in-scripted-jenkins-pipelines/)
+
 [Credentials Binding Plugin](https://www.jenkins.io/doc/pipeline/steps/credentials-binding/#withcredentials-bind-credentials-to-variables)
+
 [Home](../README.md)
